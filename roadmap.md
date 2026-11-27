@@ -1,4 +1,4 @@
 - [x] Transfer the four bundled beauty images and stage the source catalog modules.
-- [ ] Complete public storefront routes: home, catalog, details, cart, checkout, wishlist, and business pages.
-- [ ] Add demo-only admin access and management for products, orders, customers, offers, content, subscribers, and store settings.
-- [ ] Verify route metadata, shopping and admin flows, tests, and migration status.
+- [x] Complete public storefront routes: home, catalog, details, cart, checkout, wishlist, and business pages.
+- [x] Add demo-only admin access and management for products, orders, customers, offers, content, subscribers, and store settings.
+- [x] Verify route metadata, shopping and admin flows, tests, and migration status.

@@ -14,4 +14,29 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+
+  it("matches all storefront and admin routes cleanly", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    const paths = [
+      "/products",
+      "/products/velvet-lip-color",
+      "/cart",
+      "/wishlist",
+      "/checkout",
+      "/about",
+      "/contact",
+      "/faqs",
+      "/privacy",
+      "/terms",
+      "/returns",
+      "/shipping",
+      "/admin",
+      "/admin/login",
+    ];
+
+    for (const path of paths) {
+      const matches = router.matchRoutes(path);
+      expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
+    }
+  });
 });
