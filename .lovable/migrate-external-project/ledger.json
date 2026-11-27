@@ -1,0 +1,18 @@
+{
+  "source": "github:https://github.com/tridevx10-hash/screenshot-match.git",
+  "capabilities": [
+    { "capability": "application code", "source": "Public GitHub repository with Sana Cosmetics storefront modules", "outcome": "Recreate the storefront and complete its missing routes and demo management screens in the existing TanStack app", "status": "migrate", "next_action": "Port the components and connect all requested screens" },
+    { "capability": "schema", "source": "Repository scan found no database schema", "outcome": "Keep the source's in-memory demo behavior; no live database was present", "status": "accepted", "next_action": "None" },
+    { "capability": "records", "source": "Bundled demo catalog, orders, customers, coupons, banners, testimonials, and settings", "outcome": "Migrate the bundled sample records", "status": "migrate", "next_action": "Port the demo data" },
+    { "capability": "auth identities", "source": "Source defines a demo-only admin username and password; no real user accounts", "outcome": "Recreate the explicitly non-production demo sign-in", "status": "migrate", "next_action": "Add demo admin access and verify it" },
+    { "capability": "authorization", "source": "No production authorization system found", "outcome": "Keep admin access clearly marked as demo-only", "status": "accepted", "next_action": "None" },
+    { "capability": "uploaded file bytes", "source": "Four image pointers reference another Lovable project", "outcome": "Copy image bytes into this project's asset store and replace the old pointers", "status": "pending", "next_action": "Transfer the four images" },
+    { "capability": "external providers", "source": "No external providers detected", "outcome": "No provider connections required", "status": "accepted", "next_action": "None" },
+    { "capability": "public endpoints", "source": "No application endpoints detected", "outcome": "No endpoints to migrate", "status": "accepted", "next_action": "None" },
+    { "capability": "callbacks and webhooks", "source": "No callbacks or webhooks detected", "outcome": "None to preserve", "status": "accepted", "next_action": "None" },
+    { "capability": "schedules", "source": "No scheduled jobs detected", "outcome": "None to migrate", "status": "accepted", "next_action": "None" },
+    { "capability": "secrets", "source": "No required environment variables or provider credentials detected", "outcome": "No secrets needed", "status": "accepted", "next_action": "None" },
+    { "capability": "cutover", "source": "Code-only public repository; no live data service", "outcome": "No production data or provider cutover required", "status": "pending", "next_action": "Verify the completed preview" },
+    { "capability": "verification", "source": "Current project preview", "outcome": "Pending route, shopping, admin, and test verification", "status": "pending", "next_action": "Exercise the important storefront and admin flows" }
+  ]
+}
